@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ─────────────────────────────────────────────────────────────────────────────
-# build.sh — Build the LOGITECH_HID firmware for Raspberry Pi Pico 2 W
+# build.sh — Build the STEALTH_HID firmware for Raspberry Pi Pico 2 W
 #
 # Usage:
 #   ./scripts/build.sh              # normal build
@@ -10,11 +10,11 @@
 # Prerequisites (one-time setup):
 #   sudo apt install cmake gcc-arm-none-eabi libnewlib-arm-none-eabi build-essential
 #   make -C mpy-cross              # build the MicroPython cross-compiler first
-#   make -C ports/rp2 BOARD=LOGITECH_HID submodules   # fetch Pico SDK etc.
+#   make -C ports/rp2 BOARD=STEALTH_HID submodules   # fetch Pico SDK etc.
 # ─────────────────────────────────────────────────────────────────────────────
 set -euo pipefail
 
-BOARD="LOGITECH_HID"
+BOARD="STEALTH_HID"
 REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 BUILD_DIR="$REPO_ROOT/ports/rp2/build-$BOARD"
 UF2="$BUILD_DIR/firmware.uf2"

@@ -4,7 +4,7 @@
 #                    micropython/micropython master
 #
 # Strategy: REBASE (not merge)
-#   - Our changes live exclusively in ports/rp2/boards/LOGITECH_HID/ and scripts/
+#   - Our changes live exclusively in ports/rp2/boards/STEALTH_HID/ and scripts/
 #   - Upstream will never create that path, so rebase conflicts are essentially zero
 #   - Result: a clean linear history, easy to inspect diffs
 #
@@ -63,8 +63,8 @@ git rebase "$UPSTREAM_REF"
 
 echo ""
 echo "✅  Rebase complete. Verifying our board definition still exists..."
-[[ -f "ports/rp2/boards/LOGITECH_HID/mpconfigboard.h" ]] || {
-    echo "❌  LOGITECH_HID board missing after rebase! Investigate."
+[[ -f "ports/rp2/boards/STEALTH_HID/mpconfigboard.h" ]] || {
+    echo "❌  STEALTH_HID board missing after rebase! Investigate."
     exit 1
 }
 
