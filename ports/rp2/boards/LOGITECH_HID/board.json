@@ -1,0 +1,22 @@
+{
+    "deploy": [
+        "../deploy.md"
+    ],
+    "docs": "",
+    "features": [
+        "BLE",
+        "Dual-core",
+        "External Flash",
+        "USB",
+        "WiFi"
+    ],
+    "images": [
+        "rp2-pico2-w.jpg"
+    ],
+    "mcu": "rp2350",
+    "product": "Pico 2 W (Logitech HID)",
+    "thumbnail": "",
+    "url": "https://github.com/dkmaker/micropython",
+    "vendor": "dkmaker",
+    "_note": "Custom board: impersonates Logitech Unifying Receiver 046D:C52B. All RPI_PICO2_W hardware retained."
+}
