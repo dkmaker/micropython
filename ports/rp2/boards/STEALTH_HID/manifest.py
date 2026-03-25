@@ -6,4 +6,4 @@ require("bundle-networking")
 require("aioble")
 
 # Boot fix: frozen main.py forces USB re-enumeration so CDC TX works
-freeze("$(BOARD_DIR)", "boot.py")
+freeze("$(BOARD_DIR)", "main.py")
